@@ -1,0 +1,12 @@
+{
+  "name": "readmylife-static",
+  "version": "1.0.0",
+  "description": "Simple static site for Firebase App Hosting",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"No start script needed for static site.\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
