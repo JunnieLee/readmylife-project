@@ -4,9 +4,12 @@
   "description": "Simple static site for Firebase App Hosting",
   "main": "index.html",
   "scripts": {
-    "start": "echo \"No start script needed for static site.\""
+    "start": "serve -s ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
 }
