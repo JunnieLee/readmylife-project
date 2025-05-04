@@ -38,7 +38,6 @@ Junnie's first vibe coding project
 
 ## 🇺🇸 README.md (English)
 
-```markdown
 # Boinda (보인다)
 
 **Your fate has already been written—on your face and in your palm.**  
@@ -71,4 +70,3 @@ Rather than emotion analysis or personality typing, Boinda provides a **genuine 
 - Tone: Quiet mystery, spiritual guidance, gentle insight
 - Color: Warm grays, earthy browns, parchment whites
 - Visual motifs: Ink brush, candlelight, hanji textures, Korean temples
-```
