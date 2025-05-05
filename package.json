@@ -4,8 +4,9 @@
   "description": "Simple static site for Firebase App Hosting",
   "main": "index.html",
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "start": "serve -s dist",
+    "build": "vite build",
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
