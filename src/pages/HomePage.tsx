@@ -39,12 +39,18 @@ const HomePage: React.FC = () => {
         </p>
 
         <div className="w-full max-w-xs">
-          <div className="card mb-4 hover:shadow-lg transition-shadow duration-300">
+          <div className="card mb-4 hover:shadow-lg transition-shadow duration-300 bg-amber-50 bg-opacity-80 rounded-lg border border-amber-100">
             <button
               onClick={goToFaceReading}
               className="w-full py-6 flex flex-col items-center text-mystical-700 hover:text-mystical-800 transition-colors"
             >
-              <span className="text-3xl mb-2">👤</span>
+              <div className="w-12 h-12 mb-2">
+                <img
+                  src="/assets/face.png"
+                  alt="얼굴 관상"
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <span className="text-lg font-medium">얼굴 관상 보기</span>
               <span className="text-sm text-mystical-600 mt-1">
                 당신의 얼굴에 숨겨진 운명이 보이는구나...
@@ -52,12 +58,18 @@ const HomePage: React.FC = () => {
             </button>
           </div>
 
-          <div className="card hover:shadow-lg transition-shadow duration-300">
+          <div className="card hover:shadow-lg transition-shadow duration-300 bg-amber-50 bg-opacity-80 rounded-lg border border-amber-100">
             <button
               onClick={goToHandReading}
               className="w-full py-6 flex flex-col items-center text-mystical-700 hover:text-mystical-800 transition-colors"
             >
-              <span className="text-3xl mb-2">👐</span>
+              <div className="w-12 h-12 mb-2">
+                <img
+                  src="/assets/hand.png"
+                  alt="손금"
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <span className="text-lg font-medium">손금 보기</span>
               <span className="text-sm text-mystical-600 mt-1">
                 당신의 손끝에 새겨진 인생의 흔적...
