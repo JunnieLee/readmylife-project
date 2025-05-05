@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-800 font-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-stone-700 text-stone-100 rounded-md shadow-md hover:bg-stone-800 transition-colors duration-300;
+  }
+
+  .container-custom {
+    @apply mx-auto px-4 py-8 max-w-md;
+  }
+
+  .card {
+    @apply bg-stone-100 border border-stone-300 rounded-lg p-6 shadow-md;
+  }
+
+  .input-file {
+    @apply block w-full text-sm text-stone-700 
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-md file:border-0
+      file:text-sm file:font-medium
+      file:bg-stone-200 file:text-stone-700
+      hover:file:bg-stone-300;
+  }
+}
