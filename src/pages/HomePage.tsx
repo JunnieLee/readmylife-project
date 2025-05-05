@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
         <div className="relative my-8">
           <div className="absolute -top-6 -left-6 w-4 h-4 bg-amber-300 rounded-full opacity-80 animate-candle-flicker"></div>
           <h1 className="text-4xl md:text-5xl font-semibold text-mystical-800 tracking-wide">
-            🔮 보인다 (Boinda) 🔮
+            보인다 - BOINDA
           </h1>
           <div className="absolute -bottom-6 -right-6 w-4 h-4 bg-amber-300 rounded-full opacity-80 animate-candle-flicker"></div>
         </div>
