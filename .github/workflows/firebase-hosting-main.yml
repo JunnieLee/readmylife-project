@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18" # 사용하는 Node.js 버전에 맞게 조정
+          node-version: "20" # firebase-tools 호환 버전으로 변경 (또는 "22")
           cache: "npm" # npm 캐시 사용
       # 의존성 설치
       - name: Install Dependencies
