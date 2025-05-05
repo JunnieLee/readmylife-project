@@ -1,0 +1,34 @@
+# .github/workflows/firebase-hosting-main.yml
+name: Deploy to Firebase Hosting on main push
+
+on:
+  push:
+    branches:
+      - main # main 브랜치에 푸시될 때 실행
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Node.js 설정 (Vite 빌드에 필요)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18" # 사용하는 Node.js 버전에 맞게 조정
+          cache: "npm" # npm 캐시 사용
+      # 의존성 설치
+      - name: Install Dependencies
+        run: npm install
+      # 빌드 (frameworksBackend 설정 시 Firebase CLI가 자동으로 처리할 수도 있음)
+      # - name: Build
+      #   run: npm run build # 필요시 주석 해제 및 명령어 수정
+      # Firebase 배포
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_READMYLIFE_AAFD0 }}" # firebase init 시 생성된 시크릿 이름
+          channelId: live # 라이브 채널에 배포
+          projectId: readmylife-aafd0 # Firebase 프로젝트 ID
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks # 웹 프레임워크 실험 기능 활성화 (App Hosting용)
